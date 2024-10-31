@@ -32,11 +32,6 @@ jobs:
           docker push dimavr/class_schedule_backend:latest
           docker push dimavr/class_schedule_frontend:latest
 
-      - name: Set up Terraform
-        uses: hashicorp/setup-terraform@v2
-        with:
-          terraform_version: 1.3.9 
-
       - name: Terraform Init
         run: terraform init
 
